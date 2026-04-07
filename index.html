@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Next-Gen Productivity Workspace</title>
+    <meta name="description" content="Lumina is a sleek, AI-powered workspace for modern teams to collaborate, focus, and innovate together.">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <i data-lucide="zap" class="logo-icon"></i>
+                <span class="logo-text">Lumina</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Support</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button id="theme-toggle" class="btn btn-secondary icon-btn" aria-label="Toggle dark mode">
+                    <i data-lucide="sun" id="sun-icon"></i>
+                    <i data-lucide="moon" id="moon-icon" style="display:none"></i>
+                </button>
+                <a href="#" class="btn btn-secondary">Login</a>
+                <a href="#" class="btn btn-primary">Start Free</a>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-content">
+                <span class="badge">Version 2.0 Now Live</span>
+                <h1>Work Smarter, <span class="gradient-text">Sync Faster.</span></h1>
+                <p>Lumina unifies your tasks, docs, and communication in one beautiful interface. Built for the future of asynchronous work.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary btn-large">Get Started — It's Free</a>
+                    <a href="#" class="btn btn-outline btn-large"><i data-lucide="play-circle"></i> Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <img src="hero-image.png" alt="Lumina Interface Preview" id="hero-img" onerror="this.src='https://images.unsplash.com/photo-1614064641935-447b85672922?q=80&w=2670&auto=format&fit=crop'">
+                    <div class="floating-card card-1">
+                        <i data-lucide="check-circle" style="color: #10b981"></i>
+                        <span>Task Completed</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i data-lucide="users" style="color: var(--primary)"></i>
+                        <span>Team Synced</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="features bg-soft">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 5rem">
+                    <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px">Features</span>
+                    <h2 style="font-size: 3rem; margin-top: 1rem">Built for <span class="gradient-text">Teams.</span></h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon-box"><i data-lucide="layers"></i></div>
+                        <h3>Unified Workspace</h3>
+                        <p style="color: var(--text-muted); margin-top: 1rem">Keep all your files and tasks in one place, organized by projects.</p>
+                    </div>
+                    <div class="feature-card active">
+                        <div class="icon-box" style="background: rgba(255,255,255,0.1); color: white"><i data-lucide="sparkles"></i></div>
+                        <h3>AI Sidekick</h3>
+                        <p style="opacity: 0.8; margin-top: 1rem">Automate repetitive tasks and summarize long meetings with AI.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box"><i data-lucide="shield-check"></i></div>
+                        <h3>Enterprise Security</h3>
+                        <p style="color: var(--text-muted); margin-top: 1rem">Bank-grade encryption and team permissions to keep data safe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i data-lucide="zap" class="logo-icon"></i>
+                    <span class="logo-text">Lumina</span>
+                </div>
+                <p style="margin-top: 1.5rem; color: var(--text-muted)">The workspace of the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
